@@ -1,0 +1,10 @@
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/BlogPosting">
+    <h2 class="archive__item-title" itemprop="headline">
+      <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title | escape }}</a>
+    </h2>
+    {% if post.tags.size > 0 %}
+      <p class="blog-entry__keywords"><strong>Keywords:</strong> {{ post.tags | join: ', ' | escape }}</p>
+    {% endif %}
+  </article>
+</div>

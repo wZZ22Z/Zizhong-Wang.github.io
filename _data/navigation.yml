@@ -1,0 +1,11 @@
+# Header links, in order.
+
+main:
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Blog"
+    url: /blog/
+
+  - title: "CV"
+    url: /files/Zizhong_Wang_CV.pdf

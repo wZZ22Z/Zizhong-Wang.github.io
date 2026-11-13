@@ -1,0 +1,18 @@
+{% include base_path %}
+
+<div class="page__footer-content">
+  <span class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</span>
+  <nav class="page__footer-links" aria-label="Footer">
+    {% if site.author.github %}
+      <a href="https://github.com/{{ site.author.github }}">GitHub</a>
+    {% endif %}
+    {% if site.author.bitbucket %}
+      <a href="https://bitbucket.org/{{ site.author.bitbucket }}">Bitbucket</a>
+    {% endif %}
+    {% if site.atom_feed.hide != true %}
+      <a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}">Feed</a>
+    {% endif %}
+    <a href="{{ base_path }}/sitemap/">Sitemap</a>
+  </nav>
+  <span class="page__footer-credits">Built with <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>.</span>
+</div>

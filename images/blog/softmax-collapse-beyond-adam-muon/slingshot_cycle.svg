@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="580" viewBox="0 0 680 290" font-family="Helvetica, Arial, sans-serif">
+<title>Slingshot cycle</title>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<style>
+.th{font-size:14px;font-weight:bold;text-anchor:middle}
+.ts{font-size:12px;text-anchor:middle}
+.teal rect{fill:#E1F5EE;stroke:#0F6E56;stroke-width:0.8}
+.teal .th{fill:#085041}.teal .ts{fill:#0F6E56}
+.coral rect{fill:#FAECE7;stroke:#993C1D;stroke-width:0.8}
+.coral .th{fill:#712B13}.coral .ts{fill:#993C1D}
+.arr{stroke:#5F5E5A;stroke-width:1.5;fill:none}
+.lg{font-size:12px;fill:#5F5E5A}
+</style>
+</defs>
+<rect x="0" y="0" width="680" height="290" fill="#FFFFFF"/>
+<g class="teal">
+<rect x="40" y="40" width="180" height="56" rx="8"/>
+<text dy=".35em" class="th" x="130" y="58">Margins grow</text>
+<text dy=".35em" class="ts" x="130" y="78">Confidence increases</text>
+</g>
+<g class="coral">
+<rect x="250" y="40" width="180" height="56" rx="8"/>
+<text dy=".35em" class="th" x="340" y="58">Softmax collapse</text>
+<text dy=".35em" class="ts" x="340" y="78">Gradients vanish</text>
+</g>
+<g class="coral">
+<rect x="460" y="40" width="180" height="56" rx="8"/>
+<text dy=".35em" class="th" x="550" y="58">Second moment decays</text>
+<text dy=".35em" class="ts" x="550" y="78">Adam denominator shrinks</text>
+</g>
+<g class="coral">
+<rect x="460" y="170" width="180" height="56" rx="8"/>
+<text dy=".35em" class="th" x="550" y="188">Gradients recover</text>
+<text dy=".35em" class="ts" x="550" y="208">Oversized Adam update</text>
+</g>
+<g class="coral">
+<rect x="250" y="170" width="180" height="56" rx="8"/>
+<text dy=".35em" class="th" x="340" y="188">Loss spike</text>
+<text dy=".35em" class="ts" x="340" y="208">Model leaves collapse</text>
+</g>
+<g class="teal">
+<rect x="40" y="170" width="180" height="56" rx="8"/>
+<text dy=".35em" class="th" x="130" y="188">Training recovers</text>
+<text dy=".35em" class="ts" x="130" y="208">Second moment refills</text>
+</g>
+<line x1="222" y1="68" x2="246" y2="68" class="arr" marker-end="url(#arrow)"/>
+<line x1="432" y1="68" x2="456" y2="68" class="arr" marker-end="url(#arrow)"/>
+<line x1="550" y1="98" x2="550" y2="166" class="arr" marker-end="url(#arrow)"/>
+<line x1="458" y1="198" x2="434" y2="198" class="arr" marker-end="url(#arrow)"/>
+<line x1="248" y1="198" x2="224" y2="198" class="arr" marker-end="url(#arrow)"/>
+<line x1="130" y1="168" x2="130" y2="100" class="arr" marker-end="url(#arrow)"/>
+<g class="teal"><rect x="196" y="252" width="12" height="12" rx="2"/></g>
+<text dy=".35em" class="lg" x="214" y="258">Normal training</text>
+<g class="coral"><rect x="336" y="252" width="12" height="12" rx="2"/></g>
+<text dy=".35em" class="lg" x="354" y="258">Collapse and spike</text>
+</svg>

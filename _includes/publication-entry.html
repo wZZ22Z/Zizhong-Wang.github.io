@@ -1,0 +1,9 @@
+<article class="publication-entry">
+  <h2 class="publication-entry__title">
+    <a href="{{ post.paperurl | escape }}">{{ post.title | escape }}</a>
+  </h2>
+  <div class="publication-entry__authors">{{ post.authors | markdownify }}</div>
+  {% if post.review_status %}
+    <p class="publication-entry__status">{{ post.review_status | escape }}</p>
+  {% endif %}
+</article>
