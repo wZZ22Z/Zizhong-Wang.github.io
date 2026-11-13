@@ -1,6 +1,15 @@
-# wzz22z.github.io
+# Zizhong-Wang.github.io
 
 Personal academic website of Zizhong Wang, built with the [Academic Pages](https://github.com/academicpages/academicpages.github.io) Jekyll template (MIT License) and deployed to GitHub Pages by `.github/workflows/jekyll.yml`.
+
+Live URL: https://wzz22z.github.io/Zizhong-Wang.github.io/
+
+## Deployment
+
+- In repository **Settings → Pages → Build and deployment**, set **Source** to **GitHub Actions**. This site requires Jekyll 4 and Dart Sass; GitHub's built-in branch builder uses the older Ruby Sass and cannot compile `math.div()`.
+- The existing `jekyll.yml` workflow builds and deploys pushes to `main` or `master`.
+- Use Ruby 3.4.4 and the committed `Gemfile.lock` to match the deployed dependencies.
+- `_config.yml` uses `/Zizhong-Wang.github.io` as the base path. Local preview: `bundle exec jekyll serve`, then open `http://localhost:4000/Zizhong-Wang.github.io/`.
 
 - Site settings and sidebar: `_config.yml`
 - Header menu: `_data/navigation.yml`

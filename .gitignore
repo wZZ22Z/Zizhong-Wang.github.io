@@ -5,8 +5,7 @@ _site/
 # Ignore the directory for local files during development
 local/
 
-# Ignore the Gemfile that is generated
-Gemfile.lock
+# Keep Gemfile.lock tracked so local and hosted builds use the same dependencies.
 
 # Ignore files created by npm
 node_modules
